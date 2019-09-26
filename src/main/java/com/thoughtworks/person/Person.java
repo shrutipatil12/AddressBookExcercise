@@ -14,13 +14,5 @@ public class Person {
         this.address = address;
     }
 
-    @Override
-    public String toString() {
-        return "com.thoughtworks.person.Person{" +
-                "name='" + name + '\'' +
-                ", mobileNumber=" + mobileNumber +
-                ", address=" + address +
-                '}';
-    }
 }
 

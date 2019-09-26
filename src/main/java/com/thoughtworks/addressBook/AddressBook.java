@@ -14,7 +14,10 @@ public class AddressBook {
     }
 
     public boolean add(Person person) {
+        people = new ArrayList<>();
+
         people.add(person);
         return true;
     }
+
 }

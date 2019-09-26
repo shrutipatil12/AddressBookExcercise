@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AddressBookTest {
     @Test
-    void givenPerson_WhenAdd_ThenShouldAddPerson() {
+    void givenOnePerson_WhenAdd_ThenShouldAddPerson() {
         Address address = new Address("India", "BTM", 445566);
         Person person = new Person("Shruti", 1234567890, address);
 
@@ -16,4 +16,19 @@ public class AddressBookTest {
         assertEquals(true, addressBook.add(person));
 
     }
+
+    @Test
+    void givenTwoPerson_WhenAdd_ThenShouldAddPerson() {
+        Address addressOfShruti = new Address("India", "BTM", 445566);
+        Address addressOfAvani = new Address("India", "BTM", 445566);
+        Person shruti = new Person("Shruti", 1234567890, addressOfShruti);
+        Person avani = new Person("Avani", 1243546576, addressOfAvani);
+
+        AddressBook addressBook = new AddressBook();
+
+        assertEquals(true, addressBook.add(shruti));
+        assertEquals(true, addressBook.add(avani));
+
+    }
+
 }

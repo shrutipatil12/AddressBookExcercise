@@ -11,15 +11,6 @@ public class Address {
         this.zipcode = zipcode;
     }
 
-
-    @Override
-    public String toString() {
-        return "com.thoughtworks.addressBook.Address{" +
-                "country='" + country + '\'' +
-                ", street='" + street + '\'' +
-                ", zipcode=" + zipcode +
-                '}';
-    }
 }
 
 
