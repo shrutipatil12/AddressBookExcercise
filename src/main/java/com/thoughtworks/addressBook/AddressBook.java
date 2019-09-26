@@ -20,4 +20,7 @@ public class AddressBook {
         return true;
     }
 
+    public List<Person> get() {
+        return new ArrayList<>();
+    }
 }

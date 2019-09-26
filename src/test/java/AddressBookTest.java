@@ -4,6 +4,7 @@ import com.thoughtworks.person.Person;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AddressBookTest {
     @Test
@@ -31,4 +32,11 @@ public class AddressBookTest {
 
     }
 
+    @Test
+    void givenZeroPerson_WhenRetriveAddressBook_ThenItShouldNotReturnThePerson() {
+        AddressBook addressBook = new AddressBook();
+
+        assertTrue(addressBook.get().isEmpty());
+
+    }
 }
