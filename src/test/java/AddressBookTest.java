@@ -27,4 +27,18 @@ public class AddressBookTest {
 
         assertEquals(1, addressBook.get().size());
     }
+        @Test
+        void givenTwoPerson_WhenRetriveAddressBook_ThenItShouldReturnTwoPerson() {
+            Address address = new Address("India", "BTM", 445566);
+            Person shruti = new Person("Shruti", 1234567890, address);
+            Person avavi = new Person("avani", 1234967890, address);
+
+            AddressBook addressBook = new AddressBook();
+            addressBook.add((shruti));
+            addressBook.add((avavi));
+
+
+            assertEquals(2, addressBook.get().size());
+
+    }
 }
