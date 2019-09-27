@@ -13,14 +13,12 @@ public class AddressBook {
         people = new ArrayList<>();
     }
 
-    public boolean add(Person person) {
-        people = new ArrayList<>();
-
+    public void add(Person person) {
         people.add(person);
-        return true;
     }
 
     public List<Person> get() {
-        return new ArrayList<>();
+
+        return people;
     }
 }
